@@ -1,0 +1,14 @@
+/* Сброс стилей по умолчанию */
+@import url("base/_reset.css");
+
+/* Глобальные переменные (цвета, шрифты, отступы) */
+@import url("base/_variables.css");
+
+/* Утилиты */
+@import url("base/_utilities.css");
+
+/* Стили для шапки сайта (header, логотип, навигация, контакты) */
+@import url("components/_header.css");
+
+/* Стили для меню (заголовок, карточки) */
+@import url("components/_menu.css");

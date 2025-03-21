@@ -1,0 +1,53 @@
+/* Навигационное меню */
+.header {
+  background-image: linear-gradient(
+    90deg,
+    rgba(254, 221, 44, 1) 0%,
+    rgba(249, 194, 1, 1) 100%
+  );
+
+  color: var(--primary-color-font);
+}
+
+.header-container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 16px 64px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--primary-color-font);
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.nav-menu-list {
+  line-height: 2.4rem;
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+}
+
+.nav-info {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  font-style: normal;
+}
+
+.nav-info-phone {
+  font-weight: 600;
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-base);
+}
+
+.nav-info-time {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}

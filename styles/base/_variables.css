@@ -1,0 +1,14 @@
+:root {
+  /* цвета */
+  --primary-color-font: #555555;
+  /* размер шрифта */
+  --font-size-small: 1.2rem;
+  --font-size-base: 1.6rem;
+  --font-size-medium: 1.8rem;
+  --font-size-large: 2.4rem;
+  /* интервал между строчками текста */
+  --line-height-small: 1.6rem;
+  --line-height-base: 2.4rem;
+  --line-height-medium: 3.2rem;
+  --line-height-large: 4.8rem;
+}
