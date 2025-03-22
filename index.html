@@ -18,9 +18,9 @@
             </h1>
             <nav class="nav" aria-label="Основная навигация">
                 <a href="index.html" class="logo" aria-label="Перейти на главную страницу"><img src="./images/logo.svg"
-                        alt="Логотип Resto App"></a>
+                        alt="Логотип Resto App" fetchpriority="high"></a>
                 <ul class="nav-menu">
-                    <li class="nav-menu-list"><a href="#menu.html">Меню</a></li>
+                    <li class="nav-menu-list"><a href="#menu.html" aria-current="page">Меню</a></li>
                     <li class="nav-menu-list"><a href="#promo.html">Акции</a></li>
                     <li class="nav-menu-list"><a href="#about.html">О нас</a></li>
                     <li class="nav-menu-list"><a href="#events.html">События</a></li>
@@ -34,44 +34,48 @@
                 </address>
             </nav>
         </div>
-
-
     </header>
     <main class="main">
         <section class="container">
             <h2 class="container-title">Меню</h2>
-            <div class="container-menu">
-                <a href="#pizza.html" class="menu-img-link" aria-label="Перейти в раздел Пицца">
-                    <picture>
-                        <source srcset="./images/image-pizza.webp" type="image/webp">
-                        <img src="./images/image-pizza.jpg" alt="Пицца" class="menu-img">
-                    </picture>
-                    <p class="menu-img-title">Пицца</p>
-                </a>
-                <a href="#soups.html" class="menu-img-link" aria-label="Перейти в раздел Супы">
-                    <picture>
-                        <source srcset="./images/image-soup.webp" type="image/webp">
-                        <img src="./images/image-soup.jpg" alt="Супы" class="menu-img">
-                    </picture>
-                    <p class="menu-img-title">Супы</p>
-                </a>
-                <a href="#hot-dishes.html" class="menu-img-link" aria-label="Перейти в раздел Горячие блюда">
-                    <picture>
-                        <source srcset="./images/image-hot-dish.webp" type="image/webp">
-                        <img src="./images/image-hot-dish.jpg" alt="Горячие блюда" class="menu-img">
-                    </picture>
-                    <p class="menu-img-title">Горячие блюда</p>
-                </a>
-                <a href="#salads.html" class="menu-img-link" aria-label="Перейти в раздел Салаты">
-                    <picture>
-                        <source srcset="./images/image-salad.webp" type="image/webp">
-                        <img src="./images/image-salad.jpg" alt="Салаты" class="menu-img">
-                    </picture>
-                    <p class="menu-img-title">Салаты</p>
-                </a>
-
-            </div>
-
+            <ul class="container-menu">
+                <li class="menu-item">
+                    <a href="#pizza.html" class="menu-img-link" aria-label="Перейти в раздел Пицца">
+                        <picture>
+                            <source srcset="./images/image-pizza.webp" type="image/webp">
+                            <img src="./images/image-pizza.jpg" alt="Пицца" class="menu-img">
+                        </picture>
+                        <p class="menu-img-title">Пицца</p>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#soups.html" class="menu-img-link" aria-label="Перейти в раздел Супы">
+                        <picture>
+                            <source srcset="./images/image-soup.webp" type="image/webp">
+                            <img src="./images/image-soup.jpg" alt="Супы" class="menu-img">
+                        </picture>
+                        <p class="menu-img-title">Супы</p>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#hot-dishes.html" class="menu-img-link" aria-label="Перейти в раздел Горячие блюда">
+                        <picture>
+                            <source srcset="./images/image-hot-dish.webp" type="image/webp">
+                            <img src="./images/image-hot-dish.jpg" alt="Горячие блюда" class="menu-img">
+                        </picture>
+                        <p class="menu-img-title">Горячие блюда</p>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#salads.html" class="menu-img-link" aria-label="Перейти в раздел Салаты">
+                        <picture>
+                            <source srcset="./images/image-salad.webp" type="image/webp">
+                            <img src="./images/image-salad.jpg" alt="Салаты" class="menu-img">
+                        </picture>
+                        <p class="menu-img-title">Салаты</p>
+                    </a>
+                </li>
+            </ul>
         </section>
     </main>
 </body>
