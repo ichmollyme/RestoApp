@@ -1,6 +1,10 @@
 :root {
-  /* цвета */
-  --primary-color-font: #555555;
+  /* цвета шрифтов*/
+  --color-font-nav: #555555;
+  --color-font-header: #1c1c1c;
+  --color-font-description: #727272;
+  /* цвета элементов */
+  --color-background-button: #f4f4f4;
   /* размер шрифта */
   --font-size-small: 1.2rem;
   --font-size-base: 1.6rem;
@@ -11,4 +15,7 @@
   --line-height-base: 2.4rem;
   --line-height-medium: 3.2rem;
   --line-height-large: 4.8rem;
+  /* толщина букв */
+  --font-weight-regular: 400;
+  --font-weight-semi-bold: 600;
 }

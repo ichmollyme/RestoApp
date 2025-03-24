@@ -9,17 +9,18 @@
 .container {
   display: flex;
   flex-direction: column;
-  margin-top: 3.2rem;
+  padding: 32px 64px;
 }
 
 .container-title {
   font-size: 4rem;
-  font-weight: 600;
-  color: #1c1c1c;
+  font-weight: var(--font-weight-semi-bold);
+  color: var(--color-font-header);
   line-height: var(--line-height-large);
 }
 
-.container-menu {
+.container-menu,
+.container-new-dishes {
   display: flex;
   margin-top: 3.2rem;
   gap: 3.2rem;
@@ -58,7 +59,7 @@
   color: #ffffff;
   font-size: var(--font-size-large);
   line-height: var(--line-height-medium);
-  font-weight: 600;
+  font-weight: var(--font-weight-semi-bold);
   bottom: 1.6rem;
   left: 1.6rem;
   z-index: 999;

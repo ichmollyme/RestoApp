@@ -2,9 +2,9 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/main.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
@@ -12,26 +12,48 @@
 </head>
 
 <body>
+    <div class="bubble-delivery">
+        <div class="bubble-delivery-info" aria-label="Закрыть всплывающее окно">
+            <p>Бесплатная доставка от 1 000 ₽</p>
+            <button class="bubble-delivery-button"><img src="./images/icons/icon-close.svg" alt="Закрыть"></button>
+        </div>
+
+    </div>
     <header class="header">
         <div class="header-container">
-            <h1 class="visually-hidden">Resto App - Быстрая доставка еды на дом или в офис, пицца, суши и другие блюда
+            <h1 class="visually-hidden">
+                Resto App - Быстрая доставка еды на дом или в офис, пицца, суши и
+                другие блюда
             </h1>
             <nav class="nav" aria-label="Основная навигация">
-                <a href="index.html" class="logo" aria-label="Перейти на главную страницу"><img src="./images/logo.svg"
-                        alt="Логотип Resto App" fetchpriority="high"></a>
-                <ul class="nav-menu">
+                <a href="index.html" class="logo" aria-label="Перейти на главную страницу"><img
+                        src="./images/icons/logo.svg" alt="Логотип Resto App" class="logo-img"
+                        fetchpriority="high" /></a>
+                <ul class="nav-menu" aria-label="Основная навигация">
                     <li class="nav-menu-list"><a href="#menu.html" aria-current="page">Меню</a></li>
                     <li class="nav-menu-list"><a href="#promo.html">Акции</a></li>
                     <li class="nav-menu-list"><a href="#about.html">О нас</a></li>
                     <li class="nav-menu-list"><a href="#events.html">События</a></li>
-                    <li class="nav-menu-list"><a href="#delivery.html">Зоны доставки</a></li>
+                    <li class="nav-menu-list">
+                        <a href="#delivery.html">Зоны доставки</a>
+                    </li>
                 </ul>
-                <address class="nav-info">
-                    <a href="tel:+01234567890" class="nav-info-phone">+0 (123) 456 78-90</a>
-                    <time class="nav-info-time" datetime="10:00-22:40"
-                        aria-label="Позвонить в ресторан по номеру +0 (123) 456 78-90">Прием заказов с 10:00 до
-                        22:40</time>
-                </address>
+                <div class="header-info-contacts">
+                    <address class="nav-info">
+                        <a href="tel:+01234567890" class="nav-info-phone">+0 (123) 456 78-90</a>
+                        <time class="nav-info-time" datetime="10:00-22:40"
+                            aria-label="Позвонить в ресторан по номеру +0 (123) 456 78-90">Прием заказов с 10:00 до
+                            22:40</time>
+                    </address>
+                    <div class="header-info-icons">
+
+                    </div>
+                    <a href="#" class="header-icon" aria-label="Личный кабинет"><img
+                            src="./images/icons/icon-profile.svg" alt="Личный кабинет"></a>
+                    <a href="#" class="header-icon" aria-label="Корзина"><img src="./images/icons/icon-cart.svg"
+                            alt="Корзина"></a>
+                </div>
+
             </nav>
         </div>
     </header>
@@ -42,8 +64,8 @@
                 <li class="menu-item">
                     <a href="#pizza.html" class="menu-img-link" aria-label="Перейти в раздел Пицца">
                         <picture>
-                            <source srcset="./images/image-pizza.webp" type="image/webp">
-                            <img src="./images/image-pizza.jpg" alt="Пицца" class="menu-img">
+                            <!-- <source srcset="./images/image-pizza.webp" type="image/webp" /> -->
+                            <img src="./images/image-pizza.jpg" alt="Пицца" class="menu-img" width="304" height="304" />
                         </picture>
                         <p class="menu-img-title">Пицца</p>
                     </a>
@@ -51,8 +73,8 @@
                 <li class="menu-item">
                     <a href="#soups.html" class="menu-img-link" aria-label="Перейти в раздел Супы">
                         <picture>
-                            <source srcset="./images/image-soup.webp" type="image/webp">
-                            <img src="./images/image-soup.jpg" alt="Супы" class="menu-img">
+                            <!-- <source srcset="./images/image-soup.webp" type="image/webp" /> -->
+                            <img src="./images/image-soup.jpg" alt="Супы" class="menu-img" width="304" height="304" />
                         </picture>
                         <p class="menu-img-title">Супы</p>
                     </a>
@@ -60,8 +82,9 @@
                 <li class="menu-item">
                     <a href="#hot-dishes.html" class="menu-img-link" aria-label="Перейти в раздел Горячие блюда">
                         <picture>
-                            <source srcset="./images/image-hot-dish.webp" type="image/webp">
-                            <img src="./images/image-hot-dish.jpg" alt="Горячие блюда" class="menu-img">
+                            <!-- <source srcset="./images/image-hot-dish.webp" type="image/webp" /> -->
+                            <img src="./images/image-hot-dish.jpg" alt="Горячие блюда" class="menu-img" width="304"
+                                height="304" />
                         </picture>
                         <p class="menu-img-title">Горячие блюда</p>
                     </a>
@@ -69,12 +92,179 @@
                 <li class="menu-item">
                     <a href="#salads.html" class="menu-img-link" aria-label="Перейти в раздел Салаты">
                         <picture>
-                            <source srcset="./images/image-salad.webp" type="image/webp">
-                            <img src="./images/image-salad.jpg" alt="Салаты" class="menu-img">
+                            <!-- <source srcset="./images/image-salad.webp" type="image/webp" /> -->
+                            <img src="./images/image-salad.jpg" alt="Салаты" class="menu-img" width="304"
+                                height="304" />
                         </picture>
                         <p class="menu-img-title">Салаты</p>
                     </a>
                 </li>
+
+            </ul>
+        </section>
+        <section class="container">
+            <h2 class="container-title">Новинки</h2>
+            <ul class="container-new-dishes">
+                <li class="new-dishes-item">
+                    <a href="#" class="new-dishes-link">
+                        <picture>
+                            <!-- <source srcset="./images/image-pizza.webp" type="image/webp" /> -->
+                            <img src="./images/image-chinese-egg-soup.jpg" alt="Китайский яичный суп"
+                                class="new-dishes-img" width="304" height="304" />
+                        </picture>
+                        <div class="new-dishes-badge">
+                            <button class="badge" aria-label="Веганское блюдо">
+                                <img src="./images/icons/badge-vegetarian.svg" alt="Веганское блюдо">
+                            </button>
+                        </div>
+                        <h3 class="new-dishes-title">Китайский яичный суп</h3>
+                        <p class="new-dishes-description text-ellipsis">Традиционный китайский суп с яйцом и томатами
+                            черри</p>
+
+                    </a>
+                    <button class="new-dishes-button new-dishes-price" aria-label="Добавить в корзину">350
+                        ₽</button>
+                </li>
+                <li class="new-dishes-item">
+                    <a href="#" class="new-dishes-link">
+                        <picture>
+                            <!-- <source srcset="./images/image-soup.webp" type="image/webp" /> -->
+                            <img src="./images/image-paella.jpg" alt="Паэлья" class="new-dishes-img" width="304"
+                                height="304" />
+                        </picture>
+                        <div class="new-dishes-badge">
+                            <button class="badge" aria-label="Веганское блюдо">
+                                <img src="./images/icons/badge-vegetarian.svg" alt="Веганское блюдо">
+                            </button>
+                        </div>
+                        <h3 class="new-dishes-title">Паэлья</h3>
+                        <p class="new-dishes-description text-ellipsis">Традиционное испанское блюдо — рис, колбаски
+                            чоризо, куриное
+                            бедро, кальмар, кукуруза, горошек, специи</p>
+
+                    </a>
+                    <button class="new-dishes-button new-dishes-price" aria-label="Добавить в корзину">660
+                        ₽</button>
+                </li>
+                <li class="new-dishes-item">
+                    <a href="#l" class="new-dishes-link">
+                        <picture>
+                            <!-- <source srcset="./images/image-hot-dish.webp" type="image/webp" /> -->
+                            <img src="./images/image-beef-bourguignon.jpg" alt="Биф Бургеньон" class="new-dishes-img"
+                                width="304" height="304" />
+                        </picture>
+                        <h3 class="new-dishes-title">Биф Бургеньон</h3>
+                        <p class="new-dishes-description text-ellipsis">Блюдо французской кухни — тушёные кусочки
+                            говядины
+                            с картофелем и болгарским перцем</p>
+
+                    </a>
+                    <button class="new-dishes-button new-dishes-price" aria-label="Добавить в корзину">630
+                        ₽</button>
+                </li>
+                <li class="new-dishes-item">
+                    <a href="#" class="new-dishes-link">
+                        <picture>
+                            <!-- <source srcset="./images/image-salad.webp" type="image/webp" /> -->
+                            <img src="./images/image-broken-cucumbers.jpg" alt="Битые огурцы" class="new-dishes-img"
+                                width="304" height="304" />
+                        </picture>
+                        <div class="new-dishes-badge">
+                            <button class="badge" aria-label="Веганское блюдо">
+                                <img src="./images/icons/badge-vegetarian.svg" alt="Веганское блюдо">
+                            </button>
+                        </div>
+                        <h3 class="new-dishes-title">Битые огурцы</h3>
+                        <p class="new-dishes-description text-ellipsis">Салат из свежих битых огурцов с уйгурским
+                            соусом, кешью и
+                            кунжутом</p>
+
+                    </a>
+                    <button class="new-dishes-button new-dishes-price" aria-label="Добавить в корзину">320
+                        ₽</button>
+                </li>
+
+            </ul>
+        </section>
+        <section class="container">
+            <h2 class="container-title">Популярное</h2>
+            <ul class="container-new-dishes">
+                <li class="new-dishes-item">
+                    <a href="#" class="new-dishes-link">
+                        <picture>
+                            <!-- <source srcset="./images/image-pizza.webp" type="image/webp" /> -->
+                            <img src="./images/image-pepperoni.jpg" alt="Пепперони" class="new-dishes-img" width="304"
+                                height="304" />
+                        </picture>
+                        <h3 class="new-dishes-title">Пепперони</h3>
+                        <p class="new-dishes-description text-ellipsis">Просто и вкусно - томатная основа маринара,
+                            колбаски пепперони и сыр моцарелла</p>
+
+                    </a>
+                    <button class="new-dishes-button new-dishes-price" aria-label="Добавить в корзину">660
+                        ₽</button>
+                </li>
+                <li class="new-dishes-item">
+                    <a href="#" class="new-dishes-link">
+                        <picture>
+                            <!-- <source srcset="./images/image-soup.webp" type="image/webp" /> -->
+                            <img src="./images/image-gorgonzola-pear.jpg" alt="Груша Горгонзола" class="new-dishes-img"
+                                width="304" height="304" />
+                        </picture>
+                        <div class="new-dishes-badge">
+                            <button class="badge" aria-label="Веганское блюдо">
+                                <img src="./images/icons/badge-vegetarian.svg" alt="Веганское блюдо">
+                            </button>
+                        </div>
+                        <h3 class="new-dishes-title">Груша Горгонзола</h3>
+                        <p class="new-dishes-description text-ellipsis">Нежная пицца на основе сливочного соуса с сыром
+                            горгондзола, грушей, медом и кедровыми орехами</p>
+
+                    </a>
+                    <button class="new-dishes-button new-dishes-price" aria-label="Добавить в корзину">780
+                        ₽</button>
+                </li>
+                <li class="new-dishes-item">
+                    <a href="#l" class="new-dishes-link">
+                        <picture>
+                            <!-- <source srcset="./images/image-hot-dish.webp" type="image/webp" /> -->
+                            <img src="./images/image-soup.jpg" alt="Фо Бо" class="new-dishes-img" width="304"
+                                height="304" />
+                        </picture>
+                        <h3 class="new-dishes-title">Фо Бо</h3>
+                        <p class="new-dishes-description text-ellipsis">Вьетнамский суп с рисовой лапшой, в котором
+                            используется говядина, свежая зелень и ростки сои. Подают с добавками, такими как мята,
+                            долька лайма, острый соус шрирача, азиатский уксус и лаоганма</p>
+
+                    </a>
+                    <button class="new-dishes-button new-dishes-price" aria-label="Добавить в корзину">490
+                        ₽</button>
+                </li>
+                <li class="new-dishes-item">
+                    <a href="#" class="new-dishes-link">
+                        <picture>
+                            <!-- <source srcset="./images/image-salad.webp" type="image/webp" /> -->
+                            <img src="./images/image-tom-yam.jpg" alt="Том Ям с морепродуктами" class="new-dishes-img"
+                                width="304" height="304" />
+                        </picture>
+                        <div class="new-dishes-badge">
+                            <button class="badge" aria-label="Острое блюдо">
+                                <img src="./images/icons/badge-sharp.svg" alt="Острое блюдо">
+                            </button>
+                            <button class="badge" aria-label="Рыбное блюдо">
+                                <img src="./images/icons/badge-seafood.svg" alt="Рыбное блюдо">
+                            </button>
+                        </div>
+                        <h3 class="new-dishes-title">Том Ям с морепродуктами</h3>
+                        <p class="new-dishes-description text-ellipsis">Традиционный тайский суп, на основе кокосового
+                            молока и сливок, с добавлением креветок, кальмаров, грибов шиитаке и шампиньонов, помидоров
+                            черри и свежей зелени. Подается с паровым тайским рисом</p>
+
+                    </a>
+                    <button class="new-dishes-button new-dishes-price" aria-label="Добавить в корзину">590
+                        ₽</button>
+                </li>
+
             </ul>
         </section>
     </main>

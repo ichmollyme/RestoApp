@@ -1,0 +1,20 @@
+.bubble-delivery {
+  background-color: #1c1c1c;
+  padding: 12px 0;
+}
+.bubble-delivery-info {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  margin: 0 auto;
+  width: fit-content;
+  gap: 12px;
+}
+
+.bubble-delivery-button {
+  border: none;
+  cursor: pointer;
+  background: none;
+}

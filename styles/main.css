@@ -7,8 +7,14 @@
 /* Утилиты */
 @import url("base/_utilities.css");
 
+/* Всплывающее окно с уведомлением */
+@import url("components/_bubble.css");
+
 /* Стили для шапки сайта (header, логотип, навигация, контакты) */
 @import url("components/_header.css");
 
 /* Стили для меню (заголовок, карточки) */
 @import url("components/_menu.css");
+
+/* Стили для раздела "Новинки" и "Популярное" (заголовок, карточки, иконки)*/
+@import url("components/_new-dishes.css");
